@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f6;
+}
+
+/* Header */
+#header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    background-image: url('../Resources/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Right Navigation */
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Main Navigation Links */
+.main-nav {
+    display: flex;
+    gap: 50px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 450;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #007bff;
+}
+
+/* Navigation Icons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Search Icon */
+.search-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../Resources/Search.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* User Profile Icon */
+.user-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('../Resources/user.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* User Dropdown */
+.user-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.user-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #ffffff;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    text-align: left;
+}
+
+/* Dropdown Links */
+.user-dropdown .dropdown-content a.dropdown-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-dropdown .dropdown-content a.dropdown-link:hover {
+    color: #007bff;
+}
+
+/* Divider */
+.user-dropdown .dropdown-content hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #eaeaea;
+}
+
+/* Sign Out Button */
+.dropdown-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.dropdown-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Show Dropdown */
+.user-dropdown .dropdown-content.show {
+    display: block;
+}
+
+/* Login Button (when not logged in) */
+.login-btn-header {
+    width: 100px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.login-btn-header:hover {
+    background-color: #0056b3;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-input {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-icon {
+    background: url('../images/search-icon.svg') no-repeat center;
+    width: 32px;
+    height: 32px;
+    background-size: 20px;
+    border: none;
+    cursor: pointer;
+}
